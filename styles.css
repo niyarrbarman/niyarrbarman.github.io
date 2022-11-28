@@ -1,0 +1,121 @@
+body {
+    margin: 0px;
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-container {
+    box-shadow: 0px 12px 17px -4px rgba(87,87,87,0.77);
+-webkit-box-shadow: 0px 12px 17px -4px rgba(87,87,87,0.77);
+-moz-box-shadow: 0px 12px 17px -4px rgba(87,87,87,0.77);
+}
+.navbar {
+    max-width: 1560px;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+.navbar-left {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.navbar-right div {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-right,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+    margin:15px;
+}
+
+.find-a-store {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.sign-in,
+.join-now {
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 5px 20px 5px 20px;
+}
+
+.join-now {
+    background-color:white;
+    color: white;
+}
+
+.join-now:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.sign-in:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent{
+    position: relative;
+    background: #fff;
+    width: 300px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 4px;
+}
+.modalclose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
