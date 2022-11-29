@@ -227,6 +227,7 @@ form input, form textarea{
     font-size: 1.6rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
+    resize: none;
 }
 
 input::placeholder, textarea::placeholder{
