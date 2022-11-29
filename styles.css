@@ -43,7 +43,7 @@ a:visited {
     margin-right: 2.0rem;
 }
 
-.navbar-right div {
+.navbar-right {
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -142,6 +142,14 @@ a:visited {
     font-weight: 800;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.0rem;
+
+}
+
+.logos{
+    margin: auto;
+    width: 3.5rem;
+    height: 3.5rem;
+}
 }
 form input, form textarea{
     border: 0;
@@ -195,8 +203,8 @@ form button:hover{
     html{
         font-size: 40%;
     }
-    img{
-        width: 62.5%;
+    .logos{
+        width:;
         height: auto;
     }
 }
