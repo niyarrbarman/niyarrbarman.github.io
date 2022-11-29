@@ -47,13 +47,13 @@
             <div class = "naf-container">
                 <div class="socials">
                     <a href="https://www.linkedin.com/in/niyar/">
-                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Niyar LinkedIn" style="width:35px;height:35px;margin-left: 30px;margin-bottom: 20px;">
+                        <img class = "logos" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Niyar LinkedIn">
                     </a>
                     <a href="https://github.com/niyarrbarman">
-                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Niyar GitHub" style="width:35px;height:35px;margin-left: 20%;margin-bottom: 20px;">
+                        <img class = "logos" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Niyar GitHub" >
                     </a>
                     <a href="mailto: barmanniyar@gmail.com">
-                        <img src="https://cdn.cdnlogo.com/logos/g/37/gmail-icon.svg" style="width:35px;height:35px;margin-left: 20%;margin-bottom: 20px;">
+                        <img class = "logos" src="https://cdn.cdnlogo.com/logos/g/37/gmail-icon.svg" alt ="Niyar Email">
                     </a>
                 </div>
             </div>
@@ -64,10 +64,10 @@
 <script>
     function sendEmail(){
         Email.send({
-            Host : "smtp.gmail.com",
+            Host : "",
             Username : "",
             Password : "",
-            To : 'barmanniyar@gmail.com',
+            To : "",
             From : document.getElementById("email").value,
             Subject : "New Enquiry from Website",
             Body : "Name : "+document.getElementById("name").value+
