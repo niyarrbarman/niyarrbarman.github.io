@@ -156,7 +156,7 @@ form input, form textarea{
 }
 input::placeholder, textarea::placeholder{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+    font-size: 1.3rem;
 }
 
 form button{
