@@ -30,12 +30,18 @@
                         </div>
                         <div class="modal" id="modalbox">
                             <div class="modalcontent">
-                                <form class = "form" action="https://formsubmit.co/b6b8909a522e3c2cbf13ab58a740df7e" method="POST">
+                                <form class = "form" action="https://formsubmit.co/b6b8909a522e3c2cbf13ab58a740df7e" method="POST" onsubmit="SuccessPrompt();">
+                                    <!-- Honeypot -->
+                                    <input type="text" name = "_honey" style = "display: none;">
+                                    <!-- Disable Captcha -->
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <!-- Success Message -->
+                                    <input type="hidden" name = "_next"  value="https://niyarrbarman.github.io/">
                                     <h3 class = "form-h3">Let's Talk!</h3>
-                                    <input class = "contact-form" name = "name" type="text" id="name" placeholder="Your Name" required><br>
-                                    <input class = "contact-form" name = "email" type="email" id="email" placeholder="Email ID" required><br>
-                                    <input class = "contact-form" name = "phone" type="text" id="phone" placeholder="Phone No." required><br>
-                                    <textarea class = "contact-form" name = "comments, questions"id="message" cols="60" rows="6" placeholder="Your Message" required ></textarea><br>
+                                    <input class = "contact-form" name = "Name" type="text" id="name" placeholder="Your Name" required><br>
+                                    <input class = "contact-form" name = "Email" type="email" id="email" placeholder="Email ID" required><br>
+                                    <input class = "contact-form" name = "Phone" type="text" id="phone" placeholder="Phone No." required><br>
+                                    <textarea class = "contact-form" name = "Message" id="message" cols="60" rows="6" placeholder="Your Message" required ></textarea><br>
                                     <input type="hidden" name="_template" value="table">
                                     <button class = "contact-form" type="submit" style="margin-bottom: 30px;">Send</button>
                                 </form>                                
@@ -81,5 +87,10 @@
 
         </section>
     </div>
+    <script>
+        function SuccessPrompt(){
+            alert("Message sent successfully. Niyar will contact you asap");
+        }
+    </script>
 </body>
 </html>
