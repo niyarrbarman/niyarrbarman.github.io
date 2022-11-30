@@ -10,49 +10,29 @@
     <title>Niyar R Barman</title>
 </head>
 <body>
-    <div id = "wrapper">
 
+
+    <div id = "wrapper" class="wrapper">
+        <section id = "Home"></section>
         <!-- Navbar -->
-
-        <section id = "Home">
+        <nav class="nav-sticky"> 
             <div class="navbar-container">
                 <div class="navbar">
                     <div class="navbar-left">
                         <a href="#Home"><img class = "logo" src="/src/logo.png" alt=""></a>
                     </div>
                     <div class="navbar-right">
-                        <div class = "navb"><a href="">About</a></div>
-                        <div class = "navb"><a href="">Portfolio</a></div>
-                        <div class = "navb"><a href="">Publications</a></div>
-                        <div class="sign-in"><a href="/src/Resume - Niyar R Barman.pdf" class = "resume">Resume</a></div>
-                        <div class="join-now">
-                            <a href="#modalbox">Contact</a>
-                        </div>
-                        <div class="modal" id="modalbox">
-                            <div class="modalcontent">
-                                <form class = "form" action="https://formsubmit.co/b6b8909a522e3c2cbf13ab58a740df7e" method="POST" onsubmit="SuccessPrompt();">
-                                    <!-- Honeypot -->
-                                    <input type="text" name = "_honey" style = "display: none;">
-                                    <!-- Disable Captcha -->
-                                    <input type="hidden" name="_captcha" value="false">
-                                    <!-- Success Message -->
-                                    <input type="hidden" name = "_next"  value="https://niyarrbarman.github.io/">
-                                    <h3 class = "form-h3">Let's Talk!</h3>
-                                    <input class = "contact-form" name = "Name" type="text" id="name" placeholder="Your Name" required><br>
-                                    <input class = "contact-form" name = "Email" type="email" id="email" placeholder="Email ID" required><br>
-                                    <input class = "contact-form" name = "Phone" type="text" id="phone" placeholder="Phone No." required><br>
-                                    <textarea class = "contact-form" name = "Message" id="message" cols="60" rows="6" placeholder="Your Message" required ></textarea><br>
-                                    <input type="hidden" name="_template" value="table">
-                                    <button class = "contact-form" type="submit" style="margin-bottom: 30px;">Send</button>
-                                </form>                                
-                                <a href="#" class="modalclose">×</a>
-                            </div>
-                        </div>
+                        <div class = "nav-items"><a class = "navb" href="#About">About</a></div>
+                        <div class = "nav-items"><a class = "navb" href="#Portfolio">Portfolio</a></div>
+                        <div class = "nav-items"><a class = "navb" href="#Publications">Publications</a></div>
+                        <a class = "navb" href="/src/Resume - Niyar R Barman.pdf" class = "resume"><div class="sign-in">Resume</div></a>
+                        <a class = "navb" href="#modalbox" id = "modal-open"><div class="join-now">Contact</div></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </nav>
 
+        
         <!-- Landing-Page -->
 
         <section id="Landing-Page">
@@ -65,15 +45,16 @@
                         <a href="https://github.com/niyarrbarman">
                             <img class="logos" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Niyar GitHub"><br>
                         </a>
-                        <a href="mailto: barmanniyar@gmail.com">
+                        <a href="https://formsubmit.co/el/yeyesi" target="_blank">
                             <img class="logos" src="https://cdn.cdnlogo.com/logos/g/37/gmail-icon.svg" alt="Niyar Email"><br>
                         </a>
                     </div>
                 </div>
                 <div class="naf-mid">
-                    <h1 class="naf-head">Hi! I'm Niyar<h1>
-                    <p class="naf-content">I am an aspiring Data Scientist and Machine Learning Engineer</p>
-                </div>
+                    <h1 class="naf-head">Hi! I'm Niyar</h1>
+                    <p class="naf-content">I am an aspiring Data Scientist and Machine Learning Engineer</p>             
+                    <a class = "navb" href="#Projects"><div class="MyProjects">My Projects</div></a>
+                    </div>
                 <div class="naf-right">
                     <img class = "img-niyar" src="/src/niyar.jpg" alt="Niyar R Barman">
                 </div>
@@ -83,14 +64,42 @@
         <!-- About -->
 
         <section id = "About">
-
-
+            <div class="about">
+                <h1 class="h1-about">About</h1>
+                <p class="content-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in justo arcu. Nam id faucibus ante. In et gravida ligula, ut finibus odio. Duis id sapien sit amet risus gravida posuere sit amet eu velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat ex vel purus efficitur, quis suscipit nibh tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper viverra dictum. Aenean elementum in odio vel rhoncus. Curabitur posuere congue nisi, quis pulvinar nulla scelerisque at.
+                </p>
+                <p class="content-about">Aliquam sit amet nulla at nisi eleifend sodales. Duis efficitur sit amet dolor vitae pulvinar. Vivamus semper diam vitae ipsum sollicitudin, sed tincidunt nunc tempor. Sed in eros vitae dui convallis congue quis vitae arcu. In porta consectetur sem a consequat. Suspendisse tristique metus in nisl gravida aliquam. Morbi eu ex urna. Nulla facilisi. In rhoncus pretium venenatis. Ut sed ligula est. Praesent bibendum ornare lacus, bibendum ultrices tortor egestas id. Aenean eu est dictum quam vestibulum blandit.    
+                </p>
+                <p class="content-about">Aliquam sit amet nulla at nisi eleifend sodales. Duis efficitur sit amet dolor vitae pulvinar. Vivamus semper diam vitae ipsum sollicitudin, sed tincidunt nunc tempor. Sed in eros vitae dui convallis congue quis vitae arcu. In porta consectetur sem a consequat. Suspendisse tristique metus in nisl gravida aliquam. Morbi eu ex urna. Nulla facilisi. In rhoncus pretium venenatis. Ut sed ligula est. Praesent bibendum ornare lacus, bibendum ultrices tortor egestas id. Aenean eu est dictum quam vestibulum blandit.    
+                </p>
+            </div>
         </section>
+    </div>
+
+    <div class="modal" id="modalbox">
+        <div class="modalcontent">
+            <form class = "form" action="https://formsubmit.co/b6b8909a522e3c2cbf13ab58a740df7e" method="POST" onsubmit="SuccessPrompt();">
+                <!-- Honeypot -->
+                <input type="text" name = "_honey" style = "display: none;">
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Success Message -->
+                <input type="hidden" name = "_next"  value="https://niyarrbarman.github.io/">
+                <h3 class = "form-h3">Let's Talk!</h3>
+                <input class = "contact-form" name = "Name" type="text" id="name" placeholder="Your Name" required><br>
+                <input class = "contact-form" name = "Email" type="email" id="email" placeholder="Email ID" required><br>
+                <input class = "contact-form" name = "Phone" type="text" id="phone" placeholder="Phone No." required><br>
+                <textarea class = "contact-form" name = "Message" id="message" cols="60" rows="6" placeholder="Your Message" required ></textarea><br>
+                <input type="hidden" name="_template" value="table">
+                <button class = "contact-form" type="submit" style="margin-bottom: 30px;">Send</button>
+            </form>                                
+            <a href="" class="modalclose" id="modal-close">×</a>
+        </div>
     </div>
     <script>
         function SuccessPrompt(){
-            alert("Message sent successfully. Niyar will contact you asap");
-        }
+            alert("Message sent successfully :D");
+        } 
     </script>
 </body>
 </html>
