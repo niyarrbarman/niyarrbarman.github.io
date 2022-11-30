@@ -1,1 +1,400 @@
+body {
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+}
 
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navb{
+    text-decoration: none;
+    color: black;
+}
+
+.lorem{
+    font-size: 5rem;
+}
+.navb:hover{
+    color: #555;
+}
+
+.nav-items:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+
+.navbar-container {
+    box-shadow: 0rem 1.2rem 1.7rem -.4rem rgba(87, 87, 87, 0.77);
+    -webkit-box-shadow: 0rem 1.2rem 1.7rem -.4rem rgba(87, 87, 87, 0.77);
+    -moz-box-shadow: 0rem 1.2rem 1.7rem -.4rem rgba(87, 87, 87, 0.77);
+
+}
+
+
+.navbar {
+    max-width: 156.0rem;
+    padding: 2.0rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-sticky{
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.logo{
+    width: 20.0rem;
+    height: auto;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.navbar-left {
+    width: 5.0rem;
+    margin-right: 2.0rem;
+}
+
+.navbar-right {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-right,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+    margin:1.5rem;
+}
+
+
+.sign-in,
+.join-now {
+    font-weight: 500; 
+    border-radius: 4.0rem;
+    padding: .5rem 2.0rem .5rem 2.0rem;
+    background-color:rgb(0, 0, 0);
+    color: white;
+}
+
+
+.join-now:hover, .sign-in:hover {
+    background-color:rgba(241, 241, 241, 0.983);
+    color: black;
+    transition: 0.1s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    border: 0.1rem;
+    border-color: #555;
+    background-color: rgba(15, 15, 15, 0.734);
+
+}
+
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent{
+    display: flex;
+    position: relative;
+    background: #fff;
+    width: 55.0rem;
+    max-width: 90%;
+    padding: .1em .2em;
+    border-radius: .4rem;
+}
+.modalclose{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    color: #585858;
+    text-decoration: none;
+    font-size: 3.6rem;
+}
+
+.form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 50.0rem;
+    border-radius: 1.0rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-h3{
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.0rem;
+
+}
+
+
+.naf-container{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding-bottom: 30rem;
+    padding-left: 10rem;
+    padding-top: 10rem;
+    padding-right: 10rem;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-auto-rows: 100px;
+    grid-template-areas: 
+    "a b b b c c c c"
+    "a b b b c c c c"
+    "a b b b c c c c"
+    "a b b b c c c c";
+    align-items: start;
+
+}
+
+.naf-head{
+    font-size: 6rem;
+    font-weight: 600;
+    margin-top: 20rem;
+    margin-bottom: auto;
+    padding-bottom: 5rem;
+}
+
+.naf-content{
+    font-size: 3rem;
+    font-weight: 100;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logos{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 10rem;
+    
+}
+
+.naf-left{
+    grid-area: a;
+    width:10%;
+    
+}
+.naf-right{
+    grid-area: c;
+    width: 50%;
+}
+.naf-mid{
+    margin-left: 25%;
+    grid-area: b;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.img-niyar{
+    margin-top: 3rem;
+    margin-left: 50%;
+    width: 50rem;
+    height: auto;
+    box-shadow: 0rem 1.2rem 1.7rem -.4rem rgba(87, 87, 87, 0.77);
+    -webkit-box-shadow: 0rem 1.2rem 1.7rem -.4rem rgba(87, 87, 87, 0.77);
+    -moz-box-shadow: 0rem 1.2rem 1.7rem -.4rem rgba(87, 87, 87, 0.77);
+}
+
+.MyProjects{
+    font-weight: 600;
+    padding: .5rem 2.0rem .5rem 2.0rem;
+    background-color:rgb(36, 107, 241);
+    color: rgb(255, 255, 255);
+    margin-top: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    align-content: center;
+    width: 13rem;
+    height: 3rem;
+}
+
+.MyProjects:hover{
+    background-color: rgb(0, 63, 181);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.logos:hover{
+    transform: scale(1.2);
+    transition: 0.2s ease-in;
+}
+
+.about{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding-bottom: 30rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 10rem;
+}
+.h1-about{
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 7rem;
+    font-weight: 600;
+}
+.content-about{
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: justify;
+}
+
+nav.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+form input, form textarea{
+    border: 0;
+    margin: 1.0rem 0;
+    padding: 2.0rem;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 1.6rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    resize: none;
+
+}
+
+input::placeholder, textarea::placeholder{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+
+form button{
+    padding: 1.5rem;
+    background: #555;
+    color: white;
+    font-size: 1.6rem;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 20.0rem;
+    border-radius: 3.0rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+form button:hover{
+    background: #808080;
+    transition: all 0.4s;
+}
+
+
+@media screen {
+    html{
+        font-size: 62.5%;
+    }
+}
+
+@media(max-width : 1700px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width : 1500px) {
+    html{
+        font-size: 45%;
+    }
+    .logos{
+        width:;
+        height: auto;
+    }
+}
+
+@media(max-width : 1300px) {
+    html{
+        font-size: 40%;
+    }
+}
+
+@media(max-width : 1100px) {
+    html{
+        font-size: 35%;
+    }
+}
+
+@media(max-width : 907px) {
+    html{
+        font-size: 30%;
+    }
+}
+
+@media(max-width : 779px) {
+    html{
+        font-size: 25%;
+    }
+}
+
+@media(max-width : 650px) {
+    html{
+        font-size: 20%;
+    }
+}
+
+
+@media(max-width : 500px) {
+    html{
+        font-size: 15%;
+    }
+}
+
+@media(max-width : 405px) {
+    html{
+        font-size: 10%;
+    }
+}
+
+@media(max-width : 275px) {
+    html{
+        font-size: 5%;
+    }
+}
+
+
+@media(max-width : 145px) {
+    html{
+        font-size: 2%;
+    }
+}
