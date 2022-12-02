@@ -161,18 +161,9 @@ body {
 
 .naf-container{
 
-    margin-bottom: 50rem;
-    margin-top: 2rem;
-    padding: 10rem;
-
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 10px;
-    grid-auto-rows: 100px;
-    grid-template-areas: 
-    "a b b b c c c c";
-    align-items: start;
-
+    margin:10rem ;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .naf-head{
@@ -197,24 +188,13 @@ body {
     
 }
 
-.naf-left{
-    grid-area: a;
-    width:10%;
-    
-}
-.naf-right{
-    grid-area: c;
-    width: 50%;
-}
+
 .naf-mid{
-    margin-left: 25%;
-    grid-area: b;
+    
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .img-niyar{
-    margin-top: 3rem;
-    margin-left: 50%;
     width: 50rem;
     height: auto;
     box-shadow: 0rem 1.2rem 1.7rem -.4rem rgba(87, 87, 87, 0.77);
@@ -248,15 +228,14 @@ body {
     transition: 0.2s ease-in;
 }
 
-.about{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    padding-bottom: 30rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-top: 10rem;
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10rem;
 }
+
 .h1-about{
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 7rem;
@@ -268,6 +247,24 @@ body {
     font-weight: 100;
     text-align: justify;
 }
+
+#Portfolio{
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.h1-port{
+    font-size: 7rem;
+    font-weight: 600;
+}
+
+.port-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem;
+    align-items: center;
+}
+
+
 
 nav.sticky{
     position: sticky;
