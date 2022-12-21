@@ -188,10 +188,49 @@ body {
     
 }
 
+.static-text{
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 3rem;
+    font-weight: 100;
+    display: flex;
+}
 
 .naf-mid{
     
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.dynamic-text-wrapper{
+    display: flex;
+}
+
+.dynamic-text span{
+    list-style: none;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.dynamic-text{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.dynamic-text span::after{
+    content: "";
+    height: 100% ;
+    width: 100% ;
+    border-left: 0.05rem solid #000;
+    right: -2;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing{
+    40%,
+    60%{
+        left: calc(100%+30%);
+    }    
 }
 
 .img-niyar{
@@ -205,7 +244,7 @@ body {
 .MyProjects{
     font-weight: 600;
     padding: .5rem 2.0rem .5rem 2.0rem;
-    background-color:rgb(36, 107, 241);
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
     color: rgb(255, 255, 255);
     margin-top: 4rem;
     font-size: 2rem;
@@ -216,7 +255,6 @@ body {
 }
 
 .MyProjects:hover{
-    background-color: rgb(0, 63, 181);
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -230,22 +268,48 @@ body {
 
 .about-container{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     margin: 10rem;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 10rem;
 }
 
 .h1-about{
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 7rem;
     font-weight: 600;
+    margin: 10rem;
+    text-align: center;
 }
 .content-about{
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 2rem;
     font-weight: 100;
     text-align: justify;
+    flex: 5;
+}
+.content-box{
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0rem 1.2rem 1.7rem -.4rem rgba(87, 87, 87, 0.77);
+    -webkit-box-shadow: 0rem 1.2rem 1.7rem -.4rem rgba(87, 87, 87, 0.77);
+    -moz-box-shadow: 0rem 1.2rem 1.7rem -.4rem rgba(87, 87, 87, 0.77);
+    flex: 1;
+}
+
+.content-box:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+.content-link{
+    text-decoration: none;
+    color: black;
+}
+
+.content-link:hover{
+    color: #808080;
+    transition: 0.2s ease-in-out;
 }
 
 #Portfolio{
