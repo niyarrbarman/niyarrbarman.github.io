@@ -76,12 +76,19 @@
         </a>
       </div>
 
-      <div class="index-flex-child index-about">
+      <div class="index-flex-child index-about col-xl-4 col-md-7 col-sm-9">
         <h4 class="index-about-text">Hi! I am</h4><h1 class="index-about-text">Niyar R Barman</h1>
-        <h4 class="index-about-text">I am interested in</h4>
+        <h4 class="index-about-text-dynamic">I am interested in <span
+          class="txt-rotate"
+          data-period="2000"
+          data-rotate='[ "Data Science", "Machine Learning", "Deep Learning" ]'></span></h4>
         <div class="d-flex flex-column mb-3 index-buttons">
-          <div class="p-2"><a href="projects.html"><button type="button" class="btn-grad-1">My Projects</button></a></div>
-          <div class="p-2"><a href="/src/resume.pdf"><button type="button" class="btn-grad-2">My Resume</button></a></div>
+          <div class="p-2">
+            <a href="projects.html"><button type="button" class="btn-grad-1" style="width: 200px;">My Projects</button></a>
+          </div>
+          <div class="p-2">
+            <a href="/src/resume.pdf"><button type="button" class="btn-grad-2" style="width: 200px;">My Resume</button></a>
+          </div>
         </div>      
       </div>
 
@@ -98,7 +105,7 @@
 <!-- Section: Text -->
     <section class="mb-4">
       <p>
-        This website was developed utilizing HTML, CSS, and JavaScript programming languages. The design of the website was enhanced by utilizing MD Bootstrap framework. This website uses icons from <a class="text-white" href="www.flaticon.com">Flaticon.com</a>. To view the source code for this website, <a class="text-white text-uppercase fw-bold" href="">Click Here</a>
+        This website was developed utilizing HTML, CSS, and JavaScript programming languages. The design of the website was enhanced by utilizing MD Bootstrap framework. This website uses icons from <a class="text-white" href="www.flaticon.com">Flaticon.com</a>. To view the source code for this website, <a class="text-white text-uppercase fw-bold" href="https://github.com/niyarrbarman/niyarrbarman.github.io">Click Here</a>
       </p>
     </section>
     <!-- Section: Text -->
@@ -118,5 +125,6 @@
   type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
 ></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
