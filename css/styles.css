@@ -3,10 +3,126 @@
         padding-right: 10rem;
         padding-left: 10rem;
     }
-}
-@media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link{
         padding-right: 2rem;
         padding-left: 2rem;
+    }
+}
+         
+.btn-grad-1 {
+    background-image: linear-gradient(to right, #0575E6 0%, #021B79  51%, #0575E6  100%);
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
+    border: 0;
+    width: 80%;
+}
+
+.btn-grad-1:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+         
+.btn-grad-2{
+    background-image: linear-gradient(to right, #4568DC 0%, #B06AB3  51%, #4568DC  100%);
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
+    border: 0;
+    width: 80%;
+  }
+
+  .btn-grad-2:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+.index-buttons{
+    margin-top: 5rem;
+}
+ 
+.index-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.index-about-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.index-socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logos{
+    width: 2rem;
+}
+.logos:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.container{
+    margin-top: 5rem;
+}
+.image{
+    width: 30rem;
+}
+
+
+@media screen and (max-width:992px){
+    .index-main {
+      flex-direction:column;
+      justify-content: center;
+    }
+    .image{
+        width: 25rem;
+    }
+    .index-socials{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .index-flex-child{
+        padding-top: 2rem;
+        margin: auto;
+    }
+    .index-buttons{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:600px){
+    .index-main {
+        flex-direction:column;
+        justify-content: space-around;
+    }
+    .image{
+        width: 20rem;
+    }
+
+    .logos{
+        width: 1.3rem;
+    }
+    .index-socials{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .index-flex-child{
+        padding-top: 2rem;
+        margin: auto;
+    }
+    .index-buttons{
+        margin-top: 0;
     }
 }
