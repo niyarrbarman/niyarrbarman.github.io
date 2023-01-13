@@ -57,8 +57,13 @@
     flex-direction: column;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    padding-left: 2rem;
 }
 .index-about-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.index-about-text-dynamic{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
@@ -67,6 +72,7 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
 .logos{
     width: 2rem;
 }
@@ -80,7 +86,18 @@
 .image{
     width: 30rem;
 }
+.header{
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+}
 
+.projects-contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-header-text{
+    padding: 4rem;
+}
 
 @media screen and (max-width:992px){
     .index-main {
@@ -121,8 +138,14 @@
     .index-flex-child{
         padding-top: 2rem;
         margin: auto;
+        padding-left: 0;
     }
     .index-buttons{
         margin-top: 0;
+    }
+    .index-about-text-dynamic{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size:0.86rem;
     }
 }
