@@ -59,7 +59,7 @@
       style="font-family: 'Poppins', sans-serif;">Contact</h1>
   </div>
   <div class="container" style="max-width: 600px;">
-    <form action="https://formsubmit.co/barmanniyar@gmail.com" method="POST">
+      <form action="https://formsubmit.co/barmanniyar@gmail.com" method="POST" onsubmit="SuccessPrompt();">
       <!-- Honeypot -->
       <input type="text" name = "_honey" style = "display: none;">
       <!-- Disable Captcha -->
@@ -113,6 +113,11 @@
 
   </footer>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <script>
+    function SuccessPrompt(){
+      alert("Message sent successfully :D");
+    } 
+</script>
 </body>
 
 </html>
