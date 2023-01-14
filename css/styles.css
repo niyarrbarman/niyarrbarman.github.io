@@ -98,6 +98,19 @@
 .projects-header-text{
     padding: 4rem;
 }
+.about-details{
+    border-left: 3px solid #8490FF;
+    padding-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.about-interests{
+    color: #4F5760;
+}
+.about-interests:hover{
+    color: #8490FF;
+    transition: 0.4s;
+}
+
 
 @media screen and (max-width:992px){
     .index-main {
