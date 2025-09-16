@@ -19,7 +19,9 @@ redirect_from:
 
 Hi, I am Niyar R. Barman, currently an M2 student in Interactions de l'Informatique et des Mathématiques pour l'IA at Université de Toulouse. I am interested in natural language processing and spend most of my time thinking about how to make large language models reason better. I am also curious about mechanistic interpretability and learning CUDA, still very much a beginner but excited to explore and grow in these areas. I am open to research and industry opportunities starting after July 2026.
 
-My research interests include natural language processing, large language models reasoning, mechanistic interpretability, CUDA programming, AI-generated text detection, mathematical reasoning in AI, and discourse analysis.
+My research interests include natural language processing, large language models reasoning, mechanistic interpretability and CUDA programming.
+
+You can reach out to me at: niyar-r.barman[at]univ-tlse3[.]fr 
 
 # 🔥 News
 - *July 2024*: &nbsp;🎉🎉 Started research internship at IRIT, France
