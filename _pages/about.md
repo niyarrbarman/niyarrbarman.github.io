@@ -17,42 +17,58 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+Hi, I am Niyar R. Barman, currently an M2 student in Interactions de l'Informatique et des Mathématiques pour l'IA at Université de Toulouse. I am interested in natural language processing and spend most of my time thinking about how to make large language models reason better. I am also curious about mechanistic interpretability and learning CUDA, still very much a beginner but excited to explore and grow in these areas. I am open to research and industry opportunities starting after July 2026.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
-
+My research interests include natural language processing, large language models reasoning, mechanistic interpretability, CUDA programming, AI-generated text detection, mathematical reasoning in AI, and discourse analysis.
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *July 2024*: &nbsp;🎉🎉 Started research internship at IRIT, France
+- *Jan 2023*: &nbsp;🎉🎉 Started research internship at the Artificial Intelligence Institute of University of South Carolina, USA 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGDIAL 2025</div><img src='images/DIMSUM.png' alt="DIMSUM" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[DIMSUM: Discourse in Mathematical Reasoning as a Supervision Module](https://arxiv.org/abs/2503.04685)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Niyar R Barman**, Krish Sharma, Nicholas Asher, Akshay Chaturvedi
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+*Proceedings of the 25th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2025)*
+
+[**Paper**](https://arxiv.org/abs/2503.04685)
+- This work explores how discourse structures can be used as supervision for improving mathematical reasoning in large language models.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2023</div><img src='images/CounterTuringTest.png' alt="Counter Turing Test" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[Counter Turing Test CT²: AI-Generated Text Detection is Not as Easy as You May Think — Introducing AI Detectability Index](https://aclanthology.org/2023.emnlp-main.136/)
+
+Megha Chakraborty, S. M. Towhidul Islam Tonmoy, S. M. Mehedi Zaman, Krish Sharma, **Niyar R Barman**, Chandan Gupta, Shreya Gautam, Tanay Kumar, Vinija Jain, Aman Chadha, Amit P. Sheth, Amitava Das
+
+*Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023)*
+
+[**Paper**](https://aclanthology.org/2023.emnlp-main.136/)
+- Introduces the AI Detectability Index and challenges current approaches to AI-generated text detection.
+</div>
+</div>
+
+- [The Brittleness of Image Watermarking Techniques: Investigating Visual Paraphrasing for De-Watermarking AI-Generated Images](https://arxiv.org/abs/2408.10446), **Niyar R Barman**, Krish Sharma, Ashhar Aziz, Shashwat Bajpai, Shwetangshu Biswas, Aman Chadha, Vasu Sharma, Amitava Das, **arXiv 2024**
+
+- [A Transformer-Based Approach to Automate Disease Prediction from Patient Descriptions](https://ieeexplore.ieee.org/abstract/document/10455356/), **Niyar R Barman**, Krish Sharma, Ranjay Hazra, **IEEE CICT 2023**
+
+- [Addressing Hate Speech: ATLANTIS for Efficient Hate Span Detection](https://ceur-ws.org/Vol-3681/T6-6.pdf), **Niyar R Barman**, Krish Sharma, Yashraj Poddar, Adwaitha Vatupal, Partha Pakray, **FIRE 2023**
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+<span class='anchor' id='-educations'></span>
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *2025 - 2026*, **M2 Master Interactions de l'Informatique et des Mathématiques pour l'IA**, Université de Toulouse, France
+- *2021 - 2025*, **Bachelors of Technology in Electronics and Communication Engineering**, National Institute of Technology Silchar, India
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+# 💻 Research Experience
+<span class='anchor' id='-research-experience'></span>
+
+- *May 2024 - Jul 2024, Jan 2025 - Mar 2025*, **Research Intern**, Institut de Recherche en Informatique de Toulouse, France
+- *Jan 2023 - Dec 2024*, **Research Intern**, Artificial Intelligence Institute of University of South Carolina, United States
