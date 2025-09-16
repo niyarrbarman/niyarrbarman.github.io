@@ -61,7 +61,7 @@ Megha Chakraborty, S. M. Towhidul Islam Tonmoy, S. M. Mehedi Zaman, Krish Sharma
 
 - [Addressing Hate Speech: ATLANTIS for Efficient Hate Span Detection](https://ceur-ws.org/Vol-3681/T6-6.pdf), **Niyar R Barman**, Krish Sharma, Yashraj Poddar, Adwaitha Vatupal, Partha Pakray, **FIRE 2023**
 
-# 📖 Educations
+# 📖 Education
 <span class='anchor' id='-educations'></span>
 
 - *2025 - 2026*, **M2 Master Interactions de l'Informatique et des Mathématiques pour l'IA**, Université de Toulouse, France
