@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I am Niyar R. Barman, an M2 student in Interactions de l’Informatique et des Mathématiques pour l’IA at Université de Toulouse. My work focuses on natural language processing with a particular interest in improving the reasoning abilities of large language models. In parallel, I am also engaged in mechanistic interpretability and developing my skills in CUDA programming. I am motivated by the intersection of theory and practice, designing models that not only perform well but also reason transparently.
+Hi, I am Niyar R. Barman, an M2 student in Interactions de l’Informatique et des Mathématiques pour l’IA at Université de Toulouse. My work focuses on natural language processing with a particular interest in improving the reasoning abilities of large language models. In parallel, I am also engaged in mechanistic interpretability and developing my skills in CUDA programming [read the log →](https://niyarrbarman.github.io/cuda/). I am motivated by the intersection of theory and practice, designing models that not only perform well but also reason transparently.
 
 I am open to research and industry opportunities starting after July 2026.
 
