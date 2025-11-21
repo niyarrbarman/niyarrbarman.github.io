@@ -32,7 +32,9 @@ My research focuses on natural language processing, with a particular interest i
 **High-Performance Computing**
     Developing efficient implementations and optimizations using CUDA and Triton ([read the log →](https://niyarrbarman.github.io/cuda/)).
 
-I am open to research and industry opportunities starting after July 2026. You can reach out to me at: niyar-r.barman[at]utoulouse[.]fr 
+I am open to research and industry opportunities starting after July 2026. 
+
+You can reach out to me at: niyar-r.barman[at]utoulouse[.]fr 
 
 # 🔥 News
 - *Sept 2025*: &nbsp;🎉🎉 Started Masters in Université de Toulouse, France
