@@ -12,6 +12,14 @@ layout: compress
         {% include browser-upgrade.html %} {% include sidebar.html %} {% include
         masthead.html %}
 
+        <button
+            class="theme-toggle"
+            aria-label="Toggle theme"
+            title="Toggle theme"
+        >
+            <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+        </button>
+
         <div id="main" role="main">
             <article
                 class="page"
@@ -31,6 +39,69 @@ layout: compress
                 </div>
             </article>
         </div>
+
+        <script>
+            (function () {
+                var storageKey = "theme";
+                var light = "light";
+                var dark = "dark";
+
+                function setTheme(t) {
+                    try {
+                        document.documentElement.setAttribute("data-theme", t);
+                        localStorage.setItem(storageKey, t);
+                    } catch (e) {
+                        // ignore storage errors
+                        document.documentElement.setAttribute("data-theme", t);
+                    }
+
+                    var btn = document.querySelector(".theme-toggle");
+                    var icon = btn && btn.querySelector(".theme-toggle__icon");
+                    if (icon) {
+                        // show sun when in dark (to indicate switch to light), moon when in light
+                        icon.textContent = t === dark ? "☀" : "☾";
+                    }
+                }
+
+                function toggleTheme() {
+                    var cur =
+                        document.documentElement.getAttribute("data-theme");
+                    if (cur === dark) setTheme(light);
+                    else setTheme(dark);
+                }
+
+                // wire up button
+                document.addEventListener("DOMContentLoaded", function () {
+                    var btn = document.querySelector(".theme-toggle");
+                    if (!btn) return;
+
+                    btn.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        toggleTheme();
+                    });
+
+                    // initialize icon based on current attribute / preference / storage
+                    var current =
+                        document.documentElement.getAttribute("data-theme") ||
+                        (window.matchMedia &&
+                        window.matchMedia("(prefers-color-scheme: dark)")
+                            .matches
+                            ? dark
+                            : light);
+
+                    // ensure attribute present (head script may already set it)
+                    document.documentElement.setAttribute(
+                        "data-theme",
+                        current,
+                    );
+
+                    var icon = btn.querySelector(".theme-toggle__icon");
+                    if (icon) {
+                        icon.textContent = current === dark ? "☀" : "☾";
+                    }
+                });
+            })();
+        </script>
 
         {% include scripts.html %}
     </body>

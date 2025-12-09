@@ -390,10 +390,44 @@ a:after {
         color: black;
     }
 
-    .theme-toggle,
+    /* Keep copy button hidden when printing */
     .copy-button {
         display: none !important;
     }
+}
+
+/* Theme toggle: make visible and give a lightweight, unobtrusive style */
+.theme-toggle {
+    position: fixed;
+    right: 32px;
+    top: 32px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    padding: 8px;
+    font-size: 1em;
+    opacity: 0.65;
+    transition: opacity 0.2s ease;
+    color: var(--text-color);
+    line-height: 1;
+    z-index: 9999;
+    border-radius: 6px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+/* Hover / focus affordance */
+.theme-toggle:hover,
+.theme-toggle:focus {
+    opacity: 1;
+    outline: none;
+}
+
+/* Icon inside the button */
+.theme-toggle__icon {
+    display: inline-block;
+    font-size: 1.05em;
+    line-height: 1;
 }
 
 /* ==========================================================================
