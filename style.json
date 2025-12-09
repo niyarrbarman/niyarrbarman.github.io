@@ -1,0 +1,511 @@
+{
+  "meta": {
+    "name": "Niyar R Barman Style Guide",
+    "description": "A warm, serif-based design system for personal websites, blogs, and projects. Features cream-tinted backgrounds, elegant typography, and refined minimalist aesthetics.",
+    "version": "1.1",
+    "author": "niyar r barman"
+  },
+  "voice": {
+    "tone": "playful yet formal, self-aware, humble",
+    "guidelines": [
+      "brief and concise",
+      "avoids em dashes (use commas or colons instead)",
+      "avoids excessive emojis",
+      "uses lowercase for navigation and casual elements",
+      "self-deprecating humor (e.g., 'pretend I know what I'm doing')",
+      "direct and unpretentious",
+      "learning in public mindset"
+    ],
+    "examplePhrases": [
+      "figuring out GPUs, one kernel at a time.",
+      "thoughts, half-baked and otherwise.",
+      "Mostly for future me, but you're welcome to stick around.",
+      "me, but formal"
+    ],
+    "avoid": [
+      "em dashes (—)",
+      "excessive emojis",
+      "overly formal academic tone",
+      "long-winded explanations",
+      "apologetic language"
+    ]
+  },
+  "uiPreferences": {
+    "icons": {
+      "style": "minimal, text-based symbols over emojis",
+      "copyButton": "⎘",
+      "copySuccess": "✓",
+      "copyFail": "✗",
+      "pinnedBadge": "● pinned",
+      "externalLink": "→",
+      "themeToggleLight": "☾",
+      "themeToggleDark": "☀"
+    },
+    "navigation": {
+      "style": "lowercase, minimal",
+      "items": ["home", "tags", "archive", "me, but formal"],
+      "externalLinksOpenInSameTab": true
+    },
+    "pinnedPosts": {
+      "showAtTop": true,
+      "badgeStyle": "text with dot, not emoji"
+    },
+    "tags": {
+      "clickable": true,
+      "linkToTagsPage": true,
+      "style": "pill-shaped, accent-colored"
+    }
+  },
+  "colors": {
+    "light": {
+      "background": "#fdfbf7",
+      "text": "#3d3632",
+      "heading": "#2c2825",
+      "link": "#8b6914",
+      "linkHover": "#6b5010",
+      "codeBackground": "#f5f2eb",
+      "codeText": "#3d3632",
+      "inlineCodeBackground": "#f0ebe3",
+      "inlineCodeText": "#5c4d3c",
+      "border": "#e0d8cc",
+      "muted": "#7a6f64",
+      "horizontalRule": "#d4cdc0",
+      "tocBackground": "#f8f5ef",
+      "accent": "#c4a35a"
+    },
+    "dark": {
+      "background": "#1a1814",
+      "text": "#d4cdc0",
+      "heading": "#ebe5db",
+      "link": "#d4b86a",
+      "linkHover": "#e8cc82",
+      "codeBackground": "#1c1917",
+      "codeText": "#e6e1d9",
+      "inlineCodeBackground": "#2a251c",
+      "inlineCodeText": "#d4cdc0",
+      "border": "#3d362c",
+      "muted": "#9a8e7f",
+      "horizontalRule": "#3d362c",
+      "tocBackground": "#221e18",
+      "accent": "#c4a35a"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "primary": {
+        "family": [
+          "Source Serif 4",
+          "Crimson Pro",
+          "Georgia",
+          "Times New Roman",
+          "serif"
+        ],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&display=swap",
+        "usage": "Body text, navigation labels"
+      },
+      "heading": {
+        "family": ["Crimson Pro", "Georgia", "serif"],
+        "usage": "All headings (h1-h4), site title"
+      },
+      "monospace": {
+        "family": ["SF Mono", "Fira Code", "Consolas", "Monaco", "monospace"],
+        "usage": "Code blocks, inline code"
+      }
+    },
+    "baseFontSize": "18px",
+    "mobileFontSize": "17px",
+    "lineHeight": 1.85,
+    "mobileLineHeight": 1.75,
+    "textRendering": "optimizeLegibility",
+    "fontSmoothing": "antialiased"
+  },
+  "layout": {
+    "maxWidth": "680px",
+    "padding": {
+      "desktop": {
+        "top": "60px",
+        "horizontal": "32px",
+        "bottom": "80px"
+      },
+      "mobile": {
+        "top": "40px",
+        "horizontal": "20px",
+        "bottom": "60px"
+      }
+    },
+    "mobileBreakpoint": "600px"
+  },
+  "header": {
+    "textAlign": "center",
+    "marginBottom": "50px",
+    "paddingTop": "10px",
+    "siteTitle": {
+      "fontSize": "2.4em",
+      "mobileFontSize": "1.9em",
+      "fontWeight": 600,
+      "letterSpacing": "-0.02em",
+      "marginBottom": "8px"
+    },
+    "author": {
+      "fontSize": "0.95em",
+      "fontStyle": "italic",
+      "color": "muted",
+      "marginBottom": "24px",
+      "textAlign": "center",
+      "format": "~ {name}"
+    },
+    "divider": {
+      "width": "50px",
+      "height": "1px",
+      "marginTop": "30px",
+      "color": "horizontalRule"
+    }
+  },
+  "navigation": {
+    "margin": "24px 0 20px",
+    "links": {
+      "margin": "0 14px",
+      "fontSize": "0.85em",
+      "letterSpacing": "0.05em",
+      "textTransform": "lowercase",
+      "textDecoration": "none",
+      "color": "muted",
+      "hoverColor": "heading",
+      "transition": "color 0.2s"
+    }
+  },
+  "themeToggle": {
+    "position": "absolute top-right",
+    "fontSize": "1em",
+    "mobileFontSize": "0.9em",
+    "padding": "8px",
+    "opacity": 0.5,
+    "hoverOpacity": 1,
+    "lightModeIcon": "☾",
+    "darkModeIcon": "☀",
+    "transition": "opacity 0.2s",
+    "preventFlashOnLoad": true
+  },
+  "headings": {
+    "h1": {
+      "fontSize": "1.9em",
+      "mobileFontSize": "1.6em",
+      "fontWeight": 600,
+      "marginTop": "56px",
+      "marginBottom": "20px",
+      "letterSpacing": "-0.01em"
+    },
+    "h2": {
+      "fontSize": "1.5em",
+      "mobileFontSize": "1.35em",
+      "fontWeight": 500,
+      "marginTop": "52px",
+      "mobileMarginTop": "48px",
+      "marginBottom": "18px",
+      "letterSpacing": "-0.01em",
+      "contentH2": {
+        "textAlign": "center",
+        "marginTop": "64px",
+        "decorativeDividerAbove": {
+          "width": "40px",
+          "height": "1px",
+          "marginBottom": "32px"
+        }
+      }
+    },
+    "h3": {
+      "fontSize": "1.25em",
+      "mobileFontSize": "1.15em",
+      "fontWeight": 500,
+      "marginTop": "40px",
+      "marginBottom": "14px"
+    },
+    "h4": {
+      "fontSize": "1.1em",
+      "fontWeight": 500,
+      "marginTop": "32px",
+      "marginBottom": "12px"
+    }
+  },
+  "paragraphs": {
+    "marginBottom": "1.4em",
+    "textAlign": "justify",
+    "hyphens": "auto",
+    "mobile": {
+      "textAlign": "left",
+      "hyphens": "none"
+    }
+  },
+  "links": {
+    "textDecoration": "none",
+    "borderBottom": "1px solid transparent",
+    "hoverBorderBottom": "1px solid linkHover",
+    "transition": "border-color 0.2s, color 0.2s"
+  },
+  "code": {
+    "inline": {
+      "fontFamily": "monospace",
+      "fontSize": "0.85em",
+      "mobileFontSize": "0.82em",
+      "padding": "0.15em 0.4em",
+      "borderRadius": "3px"
+    },
+    "block": {
+      "padding": "20px 24px",
+      "mobilePadding": "16px 18px",
+      "borderRadius": "4px",
+      "border": "1px solid border",
+      "margin": "1.8em 0",
+      "fontSize": "0.85em",
+      "mobileFontSize": "0.8em",
+      "lineHeight": 1.6,
+      "whiteSpace": "pre-wrap",
+      "wordWrap": "break-word",
+      "wordBreak": "break-word",
+      "overflow": "visible"
+    },
+    "syntaxHighlighting": {
+      "library": "highlight.js",
+      "version": "11.9.0",
+      "lightTheme": "github",
+      "darkTheme": "github-dark",
+      "lightThemeUrl": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css",
+      "darkThemeUrl": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css",
+      "languages": ["python", "cpp", "cuda", "bash", "triton"]
+    },
+    "copyButton": {
+      "icon": "⎘",
+      "successIcon": "✓",
+      "failIcon": "✗",
+      "position": "absolute top-10px right-10px",
+      "padding": "6px",
+      "fontSize": "14px",
+      "borderRadius": "3px",
+      "opacity": 0,
+      "hoverOpacity": 1,
+      "copiedColor": "#5a8a5a",
+      "transition": "opacity 0.2s, color 0.2s"
+    }
+  },
+  "blockquote": {
+    "borderLeft": "2px solid accent",
+    "margin": "2em 0",
+    "padding": "0.5em 0 0.5em 1.5em",
+    "color": "muted",
+    "fontStyle": "italic"
+  },
+  "lists": {
+    "margin": "1.2em 0",
+    "paddingLeft": "1.8em",
+    "itemMargin": "0.4em 0",
+    "markerColor": "muted",
+    "orderedStyle": "decimal",
+    "unorderedStyle": "disc"
+  },
+  "horizontalRule": {
+    "border": "none",
+    "width": "40px",
+    "height": "1px",
+    "margin": "48px auto",
+    "background": "horizontalRule"
+  },
+  "tables": {
+    "borderCollapse": "collapse",
+    "width": "100%",
+    "margin": "24px 0",
+    "fontSize": "0.95em",
+    "cell": {
+      "border": "1px solid border",
+      "padding": "10px 14px",
+      "textAlign": "left"
+    },
+    "header": {
+      "background": "tocBackground",
+      "fontWeight": 600,
+      "color": "heading"
+    }
+  },
+  "images": {
+    "maxWidth": "100%",
+    "height": "auto",
+    "borderRadius": "4px"
+  },
+  "tags": {
+    "display": "inline-block",
+    "fontSize": "0.8em",
+    "padding": "2px 10px",
+    "margin": "2px 4px",
+    "borderRadius": "3px",
+    "background": "rgba(196, 163, 90, 0.15)",
+    "clickable": true,
+    "hoverBackground": "rgba(196, 163, 90, 0.3)",
+    "transition": "background-color 0.2s"
+  },
+  "pinnedPost": {
+    "badge": {
+      "text": "● pinned",
+      "fontSize": "0.8em",
+      "padding": "2px 8px",
+      "borderRadius": "3px",
+      "background": "rgba(196, 163, 90, 0.2)"
+    },
+    "container": {
+      "padding": "16px",
+      "borderRadius": "6px",
+      "background": "rgba(196, 163, 90, 0.05)",
+      "border": "1px solid rgba(196, 163, 90, 0.15)"
+    }
+  },
+  "footer": {
+    "marginTop": "80px",
+    "paddingTop": "24px",
+    "textAlign": "center",
+    "fontSize": "0.9em",
+    "color": "muted",
+    "decorativeDividerAbove": {
+      "width": "40px",
+      "height": "1px",
+      "marginBottom": "24px"
+    },
+    "text": "thoughts, half-baked and otherwise.",
+    "textStyle": "italic"
+  },
+  "selection": {
+    "background": "accent",
+    "color": "background"
+  },
+  "math": {
+    "library": "KaTeX",
+    "version": "0.16.9",
+    "stylesheetUrl": "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
+    "scriptUrl": "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js",
+    "autoRenderUrl": "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js",
+    "delimiters": [
+      { "left": "$$", "right": "$$", "display": true },
+      { "left": "$", "right": "$", "display": false },
+      { "left": "\\[", "right": "\\]", "display": true },
+      { "left": "\\(", "right": "\\)", "display": false }
+    ],
+    "options": {
+      "throwOnError": false
+    },
+    "styling": {
+      "fontSize": "1.05em",
+      "displayFontSize": "1.1em",
+      "displayMargin": "2em 0"
+    }
+  },
+  "animations": {
+    "themeTransition": {
+      "property": "background-color, color",
+      "duration": "0.3s",
+      "easing": "ease"
+    },
+    "linkTransition": {
+      "property": "border-color, color",
+      "duration": "0.2s"
+    },
+    "buttonTransition": {
+      "property": "opacity, color",
+      "duration": "0.2s"
+    }
+  },
+  "accessibility": {
+    "smoothScroll": true,
+    "srOnlyClass": {
+      "position": "absolute",
+      "width": "1px",
+      "height": "1px",
+      "padding": 0,
+      "margin": "-1px",
+      "overflow": "hidden",
+      "clip": "rect(0, 0, 0, 0)",
+      "border": 0
+    }
+  },
+  "print": {
+    "background": "white",
+    "color": "black",
+    "hideElements": ["themeToggle", "copyButton"]
+  },
+  "mobile": {
+    "breakpoint": "600px",
+    "codeBlockFullWidth": {
+      "marginLeft": "-10px",
+      "marginRight": "-10px",
+      "borderRadius": 0,
+      "borderLeftNone": true,
+      "borderRightNone": true
+    }
+  },
+  "darkModeStorage": {
+    "key": "theme",
+    "lightValue": "light",
+    "darkValue": "dark",
+    "dataAttribute": "data-theme",
+    "preventFlashScript": true
+  },
+  "externalDependencies": [
+    {
+      "name": "Google Fonts",
+      "url": "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&display=swap",
+      "type": "stylesheet"
+    },
+    {
+      "name": "KaTeX CSS",
+      "url": "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
+      "type": "stylesheet"
+    },
+    {
+      "name": "Highlight.js Light Theme",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css",
+      "type": "stylesheet",
+      "id": "hljs-light"
+    },
+    {
+      "name": "Highlight.js Dark Theme",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css",
+      "type": "stylesheet",
+      "id": "hljs-dark",
+      "disabled": true
+    },
+    {
+      "name": "Highlight.js",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+      "type": "script"
+    },
+    {
+      "name": "KaTeX",
+      "url": "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js",
+      "type": "script",
+      "defer": true
+    },
+    {
+      "name": "KaTeX Auto-render",
+      "url": "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js",
+      "type": "script",
+      "defer": true
+    }
+  ],
+  "designPrinciples": {
+    "aesthetic": "Elegant academic style with personality",
+    "colorPalette": "Warm, cream-tinted with brown undertones",
+    "typography": "Serif-first for readability and sophistication",
+    "whitespace": "Generous margins and line spacing",
+    "decorativeElements": "Minimal: small centered dividers, text-based icons over emojis",
+    "codeStyle": "Clean, light syntax highlighting that matches the warm palette",
+    "interactions": "Subtle hover effects, smooth transitions",
+    "darkMode": "Warm dark theme, not pure black: maintains the cozy feel",
+    "tone": "Playful but knowledgeable, humble, learning in public"
+  },
+  "usage": {
+    "applicableTo": [
+      "personal website",
+      "blog",
+      "portfolio",
+      "documentation",
+      "learning logs"
+    ],
+    "adaptable": true
+  }
+}

@@ -1,14 +1,14 @@
 /* ==========================================================================
-   TABLES
+   TABLES - Warm Elegant Style
    ========================================================================== */
 
 table {
-  margin-bottom: 1em;
+  margin: 24px 0;
   width: 100%;
   font-family: $global-font-family;
-  font-size: $type-size-6;
+  font-size: 0.95em;
   border-collapse: collapse;
-  // border: 1px solid $light-gray;
+  transition: border-color 0.3s ease;
 
   & + table {
     margin-top: 1em;
@@ -16,26 +16,75 @@ table {
 }
 
 thead {
-  background-color: $lighter-gray;
-  // border-bottom: 1px solid $light-gray;
+  background-color: var(--toc-bg);
+  transition: background-color 0.3s ease;
 }
 
 th {
-  padding: 0.5em;
-  font-weight: bold;
+  padding: 10px 14px;
+  font-weight: 600;
   text-align: left;
-  // border-right: 1px solid $light-gray;
+  color: var(--heading-color);
+  border: 1px solid var(--border-color);
+  transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
+
 tr {
-  padding-bottom: .5em;
-  padding-top: .5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--toc-bg);
+  }
 }
+
 td {
-  padding: .5em;
-  border-bottom: 1px solid $light-gray;
-  // border-right: 1px solid $light-gray;
+  padding: 10px 14px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 tr, td, th {
   vertical-align: middle;
+}
+
+/* Responsive table wrapper */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 24px 0;
+
+  @include breakpoint(max-width $small) {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 0 10px;
+  }
+
+  table {
+    margin: 0;
+  }
+}
+
+/* Striped table variant */
+.table-striped {
+  tbody tr:nth-child(odd) {
+    background-color: var(--toc-bg);
+  }
+
+  tbody tr:hover {
+    background-color: rgba(196, 163, 90, 0.1);
+  }
+}
+
+/* Borderless table variant */
+.table-borderless {
+  th, td {
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  thead th {
+    border-bottom: 2px solid var(--accent-color);
+  }
 }

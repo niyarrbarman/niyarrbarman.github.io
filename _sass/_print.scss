@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PRINT STYLES
+   PRINT STYLES - Warm Elegant Style
    ========================================================================== */
 
 /*
@@ -7,12 +7,195 @@
    ========================================================================== */
 
 @media print {
+  /* Hide interactive and non-essential elements */
   .masthead,
   .toc,
   .page__share,
   .page__related,
   .ads,
-  .page__footer {
-    display: none;
+  .page__footer,
+  .theme-toggle,
+  .copy-button,
+  .copy-btn,
+  .code-header .copy-btn,
+  nav,
+  .author__urls_sm .author__social-icons,
+  .sidebar {
+    display: none !important;
+  }
+
+  /* Reset colors for print */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: black !important;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1 {
+    font-size: 18pt;
+    border-bottom: 1px solid #ccc;
+  }
+
+  h2 {
+    font-size: 16pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+
+  /* Links */
+  a {
+    color: black !important;
+    text-decoration: underline;
+    border-bottom: none !important;
+  }
+
+  /* Show URL after external links */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Don't show URL for internal links */
+  a[href^="#"]:after,
+  a[href^="/"]:after {
+    content: none;
+  }
+
+  /* Paragraphs */
+  p {
+    orphans: 3;
+    widows: 3;
+    text-align: left !important;
+  }
+
+  /* Code blocks */
+  pre,
+  code {
+    background: #f5f5f5 !important;
+    color: black !important;
+    border: 1px solid #ddd !important;
+    page-break-inside: avoid;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Inline code */
+  p > code,
+  li > code {
+    background: #f0f0f0 !important;
+    color: black !important;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ccc !important;
+    padding: 8px;
+  }
+
+  th {
+    background: #f0f0f0 !important;
+    color: black !important;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    border-left: 3px solid #999 !important;
+    color: #333 !important;
+    page-break-inside: avoid;
+  }
+
+  /* Horizontal rules */
+  hr {
+    border-top: 1px solid #ccc !important;
+    background: none !important;
+  }
+
+  /* Paper boxes / publication cards */
+  .paper-box {
+    border-bottom: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+
+  .paper-box-image img {
+    box-shadow: none !important;
+  }
+
+  /* Badges */
+  .badge {
+    background: #333 !important;
+    color: white !important;
+  }
+
+  /* Author profile */
+  .author__avatar img {
+    border: 1px solid #ccc !important;
+  }
+
+  .author__name {
+    color: black !important;
+  }
+
+  .author__bio {
+    color: #333 !important;
+  }
+
+  /* Tags */
+  .tag,
+  .page__taxonomy-item {
+    background: #f0f0f0 !important;
+    color: black !important;
+    border: 1px solid #ccc !important;
+  }
+
+  /* Page breaks */
+  .page-break-before {
+    page-break-before: always;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  /* Ensure content takes full width */
+  #main,
+  .page,
+  .page__content {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Reset animations */
+  * {
+    animation: none !important;
+    transition: none !important;
   }
 }

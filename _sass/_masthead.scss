@@ -1,27 +1,18 @@
 /* ==========================================================================
-   MASTHEAD
+   MASTHEAD - Hidden (navbar removed for minimal design)
    ========================================================================== */
 
 .masthead {
-  position: relative;
-  top: 0;
-  background-color: white;
-  border-bottom: 1px solid $border-color;
-  -webkit-animation: intro 0.3s both;
-  animation: intro 0.3s both;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-  z-index: 20;
-  display: block;
+  display: none;
 
   &__inner-wrap {
-    @include container;
-    @include clearfix;
-    padding: .5em;
-    font-family: $sans-serif-narrow;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0.75em 32px;
+    font-family: $header-font-family;
 
-    @include breakpoint($x-large) {
-      max-width: $x-large;
+    @include breakpoint(max-width $small) {
+      padding: 0.75em 20px;
     }
 
     nav {
@@ -30,12 +21,16 @@
 
     a {
       text-decoration: none;
+      border-bottom: none;
+
+      &:hover {
+        border-bottom: none;
+      }
     }
   }
 }
 
 .masthead__menu {
-
   ul {
     margin: 0;
     padding: 0;
@@ -44,6 +39,85 @@
   }
 }
 
+/* Site Navigation */
+.site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 14px;
+
+  @include breakpoint(max-width $small) {
+    margin: 0 10px;
+  }
+
+  a {
+    display: inline-block;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: var(--muted-color);
+    padding: 0.5em 0;
+    border-bottom: none !important;
+    transition: color 0.2s ease;
+
+    &:hover,
+    &:focus {
+      color: var(--heading-color);
+      border-bottom: none !important;
+    }
+  }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 1em;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+  color: var(--text-color);
+  line-height: 1;
+
+  @include breakpoint(max-width $small) {
+    font-size: 0.9em;
+    right: -10px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    outline: none;
+  }
+
+  &__icon {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+}
+
+/* Legacy classes for backward compatibility */
 .masthead__menu-home-item {
   @include breakpoint($medium) {
     display: block !important;
@@ -60,5 +134,50 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+  }
+}
+
+.greedy-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    display: none;
+  }
+
+  .visible-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0 14px;
+
+      a {
+        font-size: 0.85em;
+        letter-spacing: 0.05em;
+        text-transform: lowercase;
+        text-decoration: none;
+        color: var(--muted-color);
+        padding: 0.5em 0;
+        border-bottom: none !important;
+        transition: color 0.2s ease;
+
+        &:hover,
+        &:focus {
+          color: var(--heading-color);
+          border-bottom: none !important;
+        }
+      }
+    }
+  }
+
+  .hidden-links {
+    display: none;
   }
 }

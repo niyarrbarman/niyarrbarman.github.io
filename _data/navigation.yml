@@ -1,19 +1,15 @@
-# main links links
-main:
-  - title: "About"
-    url: "/#about-me"
+# Navigation removed for minimal design
+# Keeping file for potential future use
 
-  - title: "Publications"
-    url: "/#-publications"
-
-  - title: "Education"
-    url: "/#-educations"
-
-  - title: "Research Experience"
-    url: "/#-research-experience"
-
-  - title: "Blog"
-    url: "/blog/"
-
-  - title: "CV"
-    url: "/files/cv_niyar_r_barman.pdf"
+# main:
+#   - title: "home"
+#     url: "/#about-me"
+#
+#   - title: "publications"
+#     url: "/#-publications"
+#
+#   - title: "blog"
+#     url: "https://niyarrbarman.github.io/blog/"
+#
+#   - title: "me, but formal"
+#     url: "/files/cv_niyar_r_barman.pdf"

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SIDEBAR
+   SIDEBAR - Warm Elegant Style
    ========================================================================== */
 
 /*
@@ -14,7 +14,7 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    max-width: 800px;
+    max-width: 680px;
     margin: 0 auto;
     text-align: center;
     opacity: 1;
@@ -26,7 +26,6 @@
     }
   }
 
-
   @include breakpoint($x-large) {
     padding-right: 0;
   }
@@ -37,7 +36,8 @@
   h5,
   h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: $header-font-family;
+    color: var(--heading-color);
   }
 
   h3,
@@ -47,9 +47,10 @@
 
   p,
   li {
-    font-family: $sans-serif;
+    font-family: $global-font-family;
     font-size: $type-size-6;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: var(--text-color);
   }
 
   img {
@@ -86,14 +87,13 @@
   align-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px 0;
 }
 
 .author__avatar {
   display: table-cell;
   vertical-align: top;
   width: 125px;
-  // set width only, for non-square avatars
-  // height: 36px;
 
   @include breakpoint($large) {
     display: block;
@@ -106,10 +106,12 @@
     max-width: 175px;
     min-width: 125px;
     border-radius: 50%;
+    border: 2px solid var(--border-color);
+    transition: border-color 0.3s ease;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      border: 1px solid var(--border-color);
     }
   }
 }
@@ -119,7 +121,6 @@
   vertical-align: top;
   padding-left: 0;
   min-width: 120px;
-  // padding-right: 25px;
   line-height: 1;
   text-align: center;
 
@@ -134,6 +135,11 @@
 .author__name {
   margin: 0;
   margin-top: 15px;
+  font-family: $header-font-family;
+  color: var(--heading-color);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  transition: color 0.3s ease;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -146,13 +152,19 @@
     font-size: $type-size-3;
   }
 
-  font-family: $sans-serif;
+  font-family: $header-font-family;
   font-size: $type-size-3;
 }
 
 .author__bio {
   margin: 0 auto;
   max-width: 80%;
+  color: var(--muted-color);
+  font-style: italic;
+  font-size: 0.95em;
+  line-height: 1.6;
+  text-align: center;
+  transition: color 0.3s ease;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -160,11 +172,36 @@
   }
 }
 
+.author__links_text {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 0.9em;
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 0.03em;
+    border-bottom: none !important;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--link-hover-color);
+      border-bottom: none !important;
+    }
+  }
+}
+
+.author__links_separator {
+  color: var(--muted-color);
+  margin: 0 8px;
+}
+
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-family: $global-font-family;
   z-index: 10;
   position: relative;
   margin: 0 auto;
@@ -212,7 +249,7 @@
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
-    border-color: $border-color transparent;
+    border-color: var(--border-color) transparent;
     z-index: 0;
 
     @include breakpoint($large) {
@@ -229,7 +266,7 @@
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
-    border-color: #fff transparent;
+    border-color: var(--bg-color) transparent;
     z-index: 1;
 
     @include breakpoint($large) {
@@ -250,27 +287,49 @@
     font-size: $type-size-5;
     text-decoration: none;
     cursor: pointer;
+    border-bottom: none !important;
 
     &:hover {
-      text-decoration: underline;
-      color: $link-color-hover;
+      text-decoration: none;
+      color: var(--link-hover-color);
+      border-bottom: none !important;
     }
   }
 }
 
 .author__urls_sm {
-  padding: .25em;
+  padding: 0.25em;
   font-size: 1.75em;
   display: block !important;
+  text-align: center;
+  margin-top: 1em;
+
+  .author__location {
+    font-size: 0.5em;
+    display: block;
+    margin-bottom: 0.75em;
+    color: var(--muted-color);
+    font-style: italic;
+  }
+
+  .author__social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
 
   a {
-    color: inherit;
+    color: var(--muted-color);
     text-decoration: none;
     margin: 0 0.3em;
+    border-bottom: none !important;
+    transition: color 0.2s ease;
 
     &:hover {
       text-decoration: none;
-      color: $link-color-hover;
+      color: var(--link-color);
+      border-bottom: none !important;
     }
   }
 }

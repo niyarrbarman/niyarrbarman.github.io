@@ -1,35 +1,51 @@
-{% if page.author and site.data.authors[page.author] %}
-{% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
-{% endif %}
+{% if page.author and site.data.authors[page.author] %} {% assign author =
+site.data.authors[page.author] %}{% else %}{% assign author = site.author %} {%
+endif %}
 
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
-
-  <div class="author__avatar">
-    <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
-  </div>
-
-  <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
-    <div class="author__links_text" style="text-align: center; margin-top: 10px; font-size: 1em;">
-      <a href="https://medium.com/@niyarrbarman" style="margin-right: 10px;">Blog</a>
-      <a href="https://niyarrbarman.github.io/files/cv_niyar_r_barman.pdf">CV</a>
+    <div class="author__avatar">
+        <img
+            src="{{ author.avatar }}"
+            class="author__avatar"
+            alt="{{ author.name }}"
+        />
     </div>
-  </div>
 
-  <div class="author__urls-wrapper">
-    <div class="author__urls_sm" style="text-align: center; margin-top: 1em;">
-      {% if author.location %}
-      <span style="font-size: 0.6em; display: block; margin-bottom: 0.5em;"><i class="fa fa-fw fa-map-marker"
-          aria-hidden="true"></i> {{ author.location }}</span>
-      {% endif %}
-      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" title="LinkedIn"
-        style="display: inline-block;"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
-      <a href="https://github.com/{{ site.author.github }}" title="Github" style="display: inline-block;"><i
-          class="fab fa-fw fa-github" aria-hidden="true"></i></a>
-      <a href="{{ site.author.googlescholar }}" title="Google Scholar" style="display: inline-block;"><i
-          class="fas fa-fw fa-graduation-cap"></i></a>
+    <div class="author__content">
+        <h3 class="author__name">{{ author.name }}</h3>
+        {% if author.bio %}
+        <p class="author__bio" style="text-align: center">{{ author.bio }}</p>
+        {% endif %}
+        <div class="author__links_text">
+            <a href="https://niyarrbarman.github.io/blog/">blog</a>
+            <span class="author__links_separator">·</span>
+            <a href="/files/cv_niyar_r_barman.pdf">cv</a>
+        </div>
     </div>
-  </div>
 
+    <div class="author__urls-wrapper">
+        <div class="author__urls_sm">
+            {% if author.location %}
+            <span class="author__location"
+                ><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{
+                author.location }}</span
+            >
+            {% endif %}
+            <div class="author__social-icons">
+                <a
+                    href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
+                    title="LinkedIn"
+                    ><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i
+                ></a>
+                <a
+                    href="https://github.com/{{ site.author.github }}"
+                    title="Github"
+                    ><i class="fab fa-fw fa-github" aria-hidden="true"></i
+                ></a>
+                <a href="{{ site.author.googlescholar }}" title="Google Scholar"
+                    ><i class="fas fa-fw fa-graduation-cap"></i
+                ></a>
+            </div>
+        </div>
+    </div>
 </div>
