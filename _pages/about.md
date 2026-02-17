@@ -33,7 +33,7 @@ You can reach me at: niyar-r.barman[at]utoulouse[.]fr
 
 # News
 - *Sept 2025*: Started M.S. in Interactions of Computer Science and Mathematics for AI at Université de Toulouse, France  
-- *2025*: DIMSUM: Discourse in Mathematical Reasoning as a Supervision Module accepted at SIGDIAL 2025  
+- *Aug 2025*: DIMSUM: Discourse in Mathematical Reasoning as a Supervision Module accepted at SIGDIAL 2025  
 - *Jan 2025*: Returned to IRIT, Toulouse for a second full-time research internship  
 - *May 2024*: Started first full-time research internship at IRIT, Toulouse, France  
 - *Dec 2023*: Counter Turing Test CT² presented at EMNLP 2023, received Outstanding Paper Award  
