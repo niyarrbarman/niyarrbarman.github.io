@@ -32,7 +32,8 @@ Open to research and industry roles starting October 2026.
 You can reach me at: niyar-r.barman[at]utoulouse[.]fr
 
 # News
-- *Sept 2025*: Started M.S. in Interactions of Computer Science and Mathematics for AI at Université de Toulouse, France  
+- *Apr 2026*: Joined the R&D Team at ([LINAGORA Labs](https://labs.linagora.com/)) for M2 Internship
+- *Sep 2025*: Started M.S. in Interactions of Computer Science and Mathematics for AI at Université de Toulouse, France  
 - *Aug 2025*: DIMSUM: Discourse in Mathematical Reasoning as a Supervision Module accepted at SIGDIAL 2025  
 - *Jan 2025*: Returned to IRIT, Toulouse for a second full-time research internship  
 - *May 2024*: Started first full-time research internship at IRIT, Toulouse, France  
@@ -50,7 +51,7 @@ You can reach me at: niyar-r.barman[at]utoulouse[.]fr
 </div>
 
 <div class='publication-item selected-pub'>
-<div class='publication-venue'>Preprint 2026</div>
+<div class='publication-venue'>Findings of ACL 2026</div>
 <div class='publication-title'><a href="https://arxiv.org/abs/2510.22767">TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination</a></div>
 <div class='publication-authors'>Omar Naim, Krish Sharma, <strong>Niyar R Barman</strong>, Nicholas Asher</div>
 <!-- <div class='publication-details'>Proceedings of the 25th Annual Meeting of the Special Interest Group on Discourse and Dialogue</div> -->
