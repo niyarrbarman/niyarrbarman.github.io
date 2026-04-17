@@ -33,6 +33,7 @@ You can reach me at: niyar-r.barman[at]utoulouse[.]fr
 
 # News
 - *Apr 2026*: Joined the R&D Team at ([LINAGORA Labs](https://labs.linagora.com/)) for M2 Internship
+- *Apr 2026*: TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination accepted at the Findings of ACL 2026
 - *Sep 2025*: Started M.S. in Interactions of Computer Science and Mathematics for AI at Université de Toulouse, France  
 - *Aug 2025*: DIMSUM: Discourse in Mathematical Reasoning as a Supervision Module accepted at SIGDIAL 2025  
 - *Jan 2025*: Returned to IRIT, Toulouse for a second full-time research internship  
