@@ -21,13 +21,13 @@ redirect_from:
 
 Hi, I am Niyar R Barman, an M2 student at Université de Toulouse, working with [Dr. Nicholas Asher](https://www.irit.fr/~Nicholas.Asher/).
 
-I work on reasoning in language models and mechanistic interpretability. I have papers at EMNLP 2023 (outstanding paper) and SIGDIAL 2025.
+I work on reasoning in language models, mechanistic interpretability, and efficient systems for training and analysis. I have papers at EMNLP 2023 (outstanding paper) and SIGDIAL 2025.
 
-My research asks when models are actually reasoning and when they are just using patterns that look right on benchmarks but fail under distribution shift. I build structured reasoning setups, run mechanistic experiments to find and measure shortcut behavior inside networks, and design compute strategies that keep representations rich while cutting overhead. I test these ideas with causal interventions on model internals, out of distribution evaluations, and targeted ablations.
+My research asks when models are actually reasoning and when they are relying on patterns that look right on benchmarks but fail under distribution shift. I study this by building structured reasoning setups, running mechanistic experiments to locate and measure shortcut behavior inside networks, and testing hypotheses with causal interventions, targeted ablations, and out-of-distribution evaluations.
 
-Currently writing CUDA/Triton kernels to learn what happens at the hardware level ([the log](https://niyarrbarman.github.io/cuda/)).
+More recently, I have been working closer to the systems stack, writing CUDA and Triton kernels to understand how model computation behaves at the hardware level and how training and inference can be made more efficient without collapsing useful internal representations ([the log](https://niyarrbarman.github.io/cuda/)).
 
-Open to research and industry roles starting October 2026.
+Open to research and industry roles after October 2026.
 
 You can reach me at: niyar-r.barman[at]utoulouse[.]fr
 
@@ -52,7 +52,7 @@ You can reach me at: niyar-r.barman[at]utoulouse[.]fr
 </div>
 
 <div class='publication-item selected-pub'>
-<div class='publication-venue'>Findings of ACL 2026</div>
+<div class='publication-venue'>ACL 2026 Findings</div>
 <div class='publication-title'><a href="https://arxiv.org/abs/2510.22767">TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination</a></div>
 <div class='publication-authors'>Omar Naim, Krish Sharma, <strong>Niyar R Barman</strong>, Nicholas Asher</div>
 <!-- <div class='publication-details'>Proceedings of the 25th Annual Meeting of the Special Interest Group on Discourse and Dialogue</div> -->
