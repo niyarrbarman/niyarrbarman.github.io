@@ -19,28 +19,33 @@ redirect_from:
 
 # Bio
 
-Hi, I am Niyar R Barman, an M2 student at Université de Toulouse, working with [Dr. Nicholas Asher](https://www.irit.fr/~Nicholas.Asher/).
+I am currently a second-year Master's student (M2) at Université de Toulouse, working as a R&D intern at [LINAGORA Labs](https://labs.linagora.com/) under the supervision of [Dr. Julie Hunter](https://www.juliejhunter.com/).
 
-I work on reasoning in language models, mechanistic interpretability, and efficient systems for training and analysis. I have papers at EMNLP 2023 (outstanding paper) and SIGDIAL 2025.
+My research interests center on reasoning in language models, mechanistic interpretability, and efficient systems for training and analysis.
 
-My research asks when models are actually reasoning and when they are relying on patterns that look right on benchmarks but fail under distribution shift. I study this by building structured reasoning setups, running mechanistic experiments to locate and measure shortcut behavior inside networks, and testing hypotheses with causal interventions, targeted ablations, and out-of-distribution evaluations.
+I am currently working on model pruning and distillation techniques to develop a math-specialized model for the [Luciole](https://huggingface.co/collections/OpenLLM-France/luciole-llm) series at LINAGORA Labs. More recently, I pre-trained a 1B Luciole model from scratch on 3T tokens using a custom attention scoring function, [SSA](https://arxiv.org/pdf/2508.14685).
 
-More recently, I have been working closer to the systems stack, writing CUDA and Triton kernels to understand how model computation behaves at the hardware level and how training and inference can be made more efficient without collapsing useful internal representations ([the log](https://niyarrbarman.github.io/cuda/)).
-
-Open to research and industry roles after October 2026.
+I am open to both research and industry roles starting after October 2026.
 
 You can reach me at: niyar-r.barman[at]utoulouse[.]fr
 
+
 # News
-- *Apr 2026*: Joined the R&D Team at ([LINAGORA Labs](https://labs.linagora.com/)) for M2 Internship
-- *Apr 2026*: TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination accepted at the Findings of ACL 2026
-- *Sep 2025*: Started M.S. in Interactions of Computer Science and Mathematics for AI at Université de Toulouse, France  
-- *Aug 2025*: DIMSUM: Discourse in Mathematical Reasoning as a Supervision Module accepted at SIGDIAL 2025  
-- *Jan 2025*: Returned to IRIT, Toulouse for a second full-time research internship  
-- *May 2024*: Started first full-time research internship at IRIT, Toulouse, France  
-- *Dec 2023*: Counter Turing Test CT² presented at EMNLP 2023, received Outstanding Paper Award  
-- *Jan 2023*: Started remote research internship at the Artificial Intelligence Institute, University of South Carolina, USA  
-- *Dec 2021*: Started B.Tech. in Electronics and Communication Engineering at National Institute of Technology Silchar, India  
+<div class='news-container'>
+<ul>
+<li><strong>Apr 2026</strong>: Joined the R&amp;D Team at (<a href="https://labs.linagora.com/">LINAGORA Labs</a>) for M2 Internship</li>
+<li><strong>Apr 2026</strong>: TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination accepted at the Findings of ACL 2026</li>
+<li><strong>Sep 2025</strong>: Started M.S. in Interactions of Computer Science and Mathematics for AI at Université de Toulouse, France</li>
+<li><strong>Aug 2025</strong>: DIMSUM: Discourse in Mathematical Reasoning as a Supervision Module accepted at SIGDIAL 2025</li>
+<li><strong>Jan 2025</strong>: Returned to IRIT, Toulouse for a second full-time research internship</li>
+<li><strong>May 2024</strong>: Started first full-time research internship at IRIT, Toulouse, France</li>
+<li><strong>Dec 2023</strong>: Counter Turing Test CT² presented at EMNLP 2023, received Outstanding Paper Award</li>
+<li><strong>Jan 2023</strong>: Started remote research internship at the Artificial Intelligence Institute, University of South Carolina, USA</li>
+<li><strong>Dec 2021</strong>: Started B.Tech. in Electronics and Communication Engineering at National Institute of Technology Silchar, India</li>
+</ul>
+</div>
+
+
 
 
 # Publications 
@@ -57,13 +62,13 @@ You can reach me at: niyar-r.barman[at]utoulouse[.]fr
 <div class='publication-authors'>Omar Naim, Krish Sharma, <strong>Niyar R Barman</strong>, Nicholas Asher</div>
 <!-- <div class='publication-details'>Proceedings of the 25th Annual Meeting of the Special Interest Group on Discourse and Dialogue</div> -->
 <div class='publication-description'>TALE boosts LLM inference by removing task-irrelevant layers to match or exceed baseline accuracy across 9 tasks and 5 model families while reducing compute, requiring no retraining and only modest setup cost.</div>
-<div class='publication-links'><a href="https://arxiv.org/abs/2510.22767">paper</a><span class='link-separator'> · </span><a href="https://anonymous.4open.science/r/tale/">code</a></div>
+<div class='publication-links'><a href="https://arxiv.org/abs/2510.22767">paper</a><span class='link-separator'> · </span><a href="https://github.com/omyokun/tale">code</a></div>
 </div>
 
 <div class='publication-item selected-pub'>
 <div class='publication-venue'>SIGDIAL 2025</div>
 <div class='publication-title'><a href="https://aclanthology.org/2025.sigdial-1.24/">DIMSUM: Discourse in Mathematical Reasoning as a Supervision Module</a></div>
-<div class='publication-authors'><strong>Niyar R Barman</strong>, Krish Sharma, Nicholas Asher, Akshay Chaturvedi</div>
+<div class='publication-authors'>Krish Sharma*, <strong>Niyar R Barman</strong>*, Nicholas Asher, Akshay Chaturvedi</div>
 <div class='publication-details'>Proceedings of the 26th Annual Meeting of the Special Interest Group on Discourse and Dialogue</div>
 <div class='publication-description'>This work explores how discourse structures can be used as supervision for improving mathematical reasoning in large language models.</div>
 <div class='publication-links'><a href="https://aclanthology.org/2025.sigdial-1.24/">paper</a><span class='link-separator'> · </span><a href="https://github.com/Krish2002/DIMSUM">code</a></div>
@@ -132,10 +137,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-
+<div class='publication-details'>
+    <center>* equal contribution</center>
+</div>
 # Research Experience
 <span class='anchor' id='-research-experience'></span>
 
+- *Apr 2026 - Sep 2026*, **R&D Intern**, LINAGORA Labs, France
 - *May 2024 - Jul 2024, Jan 2025 - Mar 2025*, **Research Intern**, Institut de Recherche en Informatique de Toulouse, France
 - *Jan 2023 - Dec 2024*, **Research Intern**, Artificial Intelligence Institute of University of South Carolina, United States
 

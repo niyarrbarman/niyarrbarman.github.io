@@ -1,0 +1,30 @@
+/* News scroll container styling */
+.news-container {
+    max-height: 220px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.news-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.news-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.news-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.news-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
