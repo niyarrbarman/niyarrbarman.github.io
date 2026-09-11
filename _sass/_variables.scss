@@ -6,19 +6,19 @@
    Typography
    ========================================================================== */
 
-$doc-font-size              : 18;
+$doc-font-size              : 14;
 
 /* paragraph indention */
 $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 0.5em;
 
 /* system typefaces */
-$serif                      : "Source Serif 4", "Crimson Pro", Georgia, "Times New Roman", serif;
-$sans-serif                 : "Source Serif 4", "Crimson Pro", Georgia, serif;
+$serif                      : "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$sans-serif                 : "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 $monospace                  : "SF Mono", "Fira Code", Consolas, Monaco, monospace;
 
 /* sans serif typefaces */
-$sans-serif-narrow          : "Crimson Pro", Georgia, serif;
+$sans-serif-narrow          : "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
 
 /* serif typefaces */
@@ -29,7 +29,7 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 $global-font-family         : $serif;
-$header-font-family         : "Crimson Pro", Georgia, serif;
+$header-font-family         : $sans-serif;
 $caption-font-family        : $serif;
 
 /* type scale */

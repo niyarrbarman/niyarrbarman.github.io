@@ -42,7 +42,7 @@
    ========================================================================== */
 
 .publication-item {
-    padding: 1.5em 0;
+    padding: 0.9em 0;
 }
 
 .publication-venue {
@@ -51,18 +51,18 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--bg-color);
-    background: var(--accent-color);
-    padding: 3px 10px;
-    border-radius: 3px;
-    margin-bottom: 0.75em;
+    color: var(--muted-color);
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 0.35em;
 }
 
 .publication-title {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
     line-height: 1.4;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.35em;
 
     a {
         color: var(--heading-color);
@@ -149,7 +149,7 @@
 /* Dark mode adjustments */
 [data-theme="dark"] {
     .publication-venue {
-        color: var(--bg-color);
+        color: var(--muted-color);
     }
 }
 
@@ -158,8 +158,8 @@
    ========================================================================== */
 
 .publication-toggle {
-    text-align: center;
-    margin-bottom: 2em;
+    text-align: left;
+    margin-bottom: 1em;
     font-size: 0.9em;
 }
 
@@ -184,6 +184,38 @@
 .toggle-separator {
     color: var(--muted-color);
     margin: 0 0.75em;
+}
+
+.news-container li {
+    margin: 0;
+    padding: 0.55em 0;
+    line-height: 1.45;
+}
+
+/* ==========================================================================
+   Experience and Education
+   ========================================================================== */
+
+.credential-list {
+    margin: 0.25em 0 0;
+}
+
+.credential-item {
+    padding: 0.55em 0;
+}
+
+.credential-date,
+.credential-meta {
+    color: var(--muted-color);
+}
+
+.credential-title,
+.credential-meta {
+    margin-top: 0.15em;
+}
+
+.credential-date {
+    white-space: normal;
 }
 
 /* ==========================================================================

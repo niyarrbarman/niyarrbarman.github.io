@@ -33,17 +33,44 @@ You can reach me at: niyar-r.barman[at]utoulouse[.]fr
 # News
 <div class='news-container'>
 <ul>
-<li><strong>Apr 2026</strong>: Joined the R&amp;D Team at (<a href="https://labs.linagora.com/">LINAGORA Labs</a>) for M2 Internship</li>
-<li><strong>Apr 2026</strong>: TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination accepted at the Findings of ACL 2026</li>
-<li><strong>Sep 2025</strong>: Started M.S. in Interactions of Computer Science and Mathematics for AI at Université de Toulouse, France</li>
-<li><strong>Aug 2025</strong>: DIMSUM: Discourse in Mathematical Reasoning as a Supervision Module accepted at SIGDIAL 2025</li>
-<li><strong>Jan 2025</strong>: Returned to IRIT, Toulouse for a second full-time research internship</li>
-<li><strong>May 2024</strong>: Started first full-time research internship at IRIT, Toulouse, France</li>
-<li><strong>Dec 2023</strong>: Counter Turing Test CT² presented at EMNLP 2023, received Outstanding Paper Award</li>
-<li><strong>Jan 2023</strong>: Started remote research internship at the Artificial Intelligence Institute, University of South Carolina, USA</li>
-<li><strong>Dec 2021</strong>: Started B.Tech. in Electronics and Communication Engineering at National Institute of Technology Silchar, India</li>
+<li><strong>Apr 2026:</strong> Joined the R&amp;D Team at (<a href="https://labs.linagora.com/">LINAGORA Labs</a>) for M2 Internship</li>
+<li><strong>Apr 2026:</strong> TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination accepted at the Findings of ACL 2026</li>
+<li><strong>Sep 2025:</strong> Started M.S. in Interactions of Computer Science and Mathematics for AI at Université de Toulouse, France</li>
+<li><strong>Aug 2025:</strong> DIMSUM: Discourse in Mathematical Reasoning as a Supervision Module accepted at SIGDIAL 2025</li>
+<li><strong>Jan 2025:</strong> Returned to IRIT, Toulouse for a second full-time research internship</li>
+<li><strong>May 2024:</strong> Started first full-time research internship at IRIT, Toulouse, France</li>
+<li><strong>Dec 2023:</strong> Counter Turing Test CT² presented at EMNLP 2023, received Outstanding Paper Award</li>
+<li><strong>Jan 2023:</strong> Started remote research internship at the Artificial Intelligence Institute, University of South Carolina, USA</li>
+<li><strong>Dec 2021:</strong> Started B.Tech. in Electronics and Communication Engineering at National Institute of Technology Silchar, India</li>
 </ul>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const newsContainer = document.querySelector('.news-container');
+    const newsItems = newsContainer ? newsContainer.querySelectorAll('li') : [];
+
+    function sizeNewsContainer() {
+        if (!newsContainer || newsItems.length <= 5) return;
+
+        newsContainer.style.maxHeight = 'none';
+        newsContainer.style.overflowY = 'visible';
+
+        const containerTop = newsContainer.getBoundingClientRect().top;
+        const fifthItemBottom = newsItems[4].getBoundingClientRect().bottom;
+
+        newsContainer.style.maxHeight = (fifthItemBottom - containerTop) + 'px';
+        newsContainer.style.overflowY = 'auto';
+    }
+
+    sizeNewsContainer();
+    window.addEventListener('resize', sizeNewsContainer);
+
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(sizeNewsContainer);
+    }
+});
+</script>
 
 
 
@@ -58,11 +85,11 @@ You can reach me at: niyar-r.barman[at]utoulouse[.]fr
 
 <div class='publication-item selected-pub'>
 <div class='publication-venue'>ACL 2026 Findings</div>
-<div class='publication-title'><a href="https://arxiv.org/abs/2510.22767">TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination</a></div>
+<div class='publication-title'><a href="https://aclanthology.org/2026.findings-acl.1136.pdf">TELL-TALE: Task Efficient LLMs with Task Aware Layer Elimination</a></div>
 <div class='publication-authors'>Omar Naim, Krish Sharma, <strong>Niyar R Barman</strong>, Nicholas Asher</div>
-<!-- <div class='publication-details'>Proceedings of the 25th Annual Meeting of the Special Interest Group on Discourse and Dialogue</div> -->
+<div class='publication-details'>Findings of the Association for Computational Linguistics: ACL 2026</div>
 <div class='publication-description'>TALE boosts LLM inference by removing task-irrelevant layers to match or exceed baseline accuracy across 9 tasks and 5 model families while reducing compute, requiring no retraining and only modest setup cost.</div>
-<div class='publication-links'><a href="https://arxiv.org/abs/2510.22767">paper</a><span class='link-separator'> · </span><a href="https://github.com/omyokun/tale">code</a></div>
+<div class='publication-links'><a href="https://aclanthology.org/2026.findings-acl.1136.pdf">paper</a><span class='link-separator'> · </span><a href="https://github.com/omyokun/tale">code</a></div>
 </div>
 
 <div class='publication-item selected-pub'>
@@ -143,13 +170,37 @@ document.addEventListener('DOMContentLoaded', function() {
 # Research Experience
 <span class='anchor' id='-research-experience'></span>
 
-- *Apr 2026 - Sep 2026*, **R&D Intern**, LINAGORA Labs, France ([Master's internship report]({{ '/files/report_stage_m2_niyar.pdf' | relative_url }}))
-- *May 2024 - Jul 2024, Jan 2025 - Mar 2025*, **Research Intern**, Institut de Recherche en Informatique de Toulouse, France
-- *Jan 2023 - Dec 2024*, **Research Intern**, Artificial Intelligence Institute of University of South Carolina, United States
+<div class='credential-list'>
+<div class='credential-item'>
+<div class='credential-date'>Apr 2026 - Sep 2026</div>
+<div class='credential-title'>R&amp;D Intern</div>
+<div class='credential-meta'>LINAGORA Labs · France</div>
+</div>
+<div class='credential-item'>
+<div class='credential-date'>May 2024 - Jul 2024; Jan 2025 - Mar 2025</div>
+<div class='credential-title'>Research Intern</div>
+<div class='credential-meta'>Institut de Recherche en Informatique de Toulouse · France</div>
+</div>
+<div class='credential-item'>
+<div class='credential-date'>Jan 2023 - Dec 2024</div>
+<div class='credential-title'>Research Intern</div>
+<div class='credential-meta'>Artificial Intelligence Institute of University of South Carolina · United States</div>
+</div>
+</div>
 
 
 # Education
 <span class='anchor' id='-educations'></span>
 
-- *2025 - 2026*, **M2 Master Interactions de l'Informatique et des Mathématiques pour l'IA**, Université de Toulouse, France
-- *2021 - 2025*, **Bachelors of Technology in Electronics and Communication Engineering**, National Institute of Technology Silchar, India
+<div class='credential-list'>
+<div class='credential-item'>
+<div class='credential-date'>2025 - 2026</div>
+<div class='credential-title'>Master parcours Interactions de l'informatique et des mathématiques pour l'intelligence artificielle</div>
+<div class='credential-meta'>Université de Toulouse · France</div>
+</div>
+<div class='credential-item'>
+<div class='credential-date'>2021 - 2025</div>
+<div class='credential-title'>Bachelors of Technology in Electronics and Communication Engineering</div>
+<div class='credential-meta'>National Institute of Technology Silchar · India</div>
+</div>
+</div>

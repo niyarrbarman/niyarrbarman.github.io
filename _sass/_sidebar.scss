@@ -133,18 +133,13 @@
 }
 
 .author__name {
-  margin: 0;
-  margin-top: 15px;
+  margin: 16px 0 0;
   font-family: $header-font-family;
   color: var(--heading-color);
   font-weight: 600;
   letter-spacing: -0.02em;
   transition: color 0.3s ease;
 
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
 }
 
 .sidebar .author__name {
@@ -157,7 +152,7 @@
 }
 
 .author__bio {
-  margin: 0 auto;
+  margin: 16px auto 0;
   max-width: 80%;
   color: var(--muted-color);
   font-style: italic;
@@ -166,15 +161,11 @@
   text-align: center;
   transition: color 0.3s ease;
 
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
 }
 
 .author__links_text {
   text-align: center;
-  margin-top: 14px;
+  margin-top: 16px;
   font-size: 0.9em;
 
   a {
@@ -298,16 +289,16 @@
 }
 
 .author__urls_sm {
-  padding: 0.25em;
+  padding: 0;
   font-size: 1.75em;
   display: block !important;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 16px;
 
   .author__location {
     font-size: 0.5em;
     display: block;
-    margin-bottom: 0.75em;
+    margin-bottom: 16px;
     color: var(--muted-color);
     font-style: italic;
   }

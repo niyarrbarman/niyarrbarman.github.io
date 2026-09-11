@@ -6,19 +6,23 @@
   @include container;
   @include clearfix;
   margin-top: 1em;
+  max-width: 590px;
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
-    max-width: 680px;
+    max-width: 590px;
   }
 }
 
 .page {
+  max-width: 550px;
+  margin: 0 auto;
+
   @include breakpoint($large) {
-    max-width: 680px;
+    max-width: 550px;
     margin: 0 auto;
   }
 
@@ -52,19 +56,18 @@
 }
 
 h1 {
-  margin-top: 56px;
-  margin-bottom: 20px;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid var(--border-color);
+  margin-top: 48px;
+  margin-bottom: 16px;
+  padding-bottom: 0;
   font-family: $header-font-family;
   font-weight: 600;
-  font-size: 1.9em;
+  font-size: 1.125em;
   letter-spacing: -0.01em;
   color: var(--heading-color);
   transition: border-color 0.3s ease, color 0.3s ease;
 
   @include breakpoint(max-width $small) {
-    font-size: 1.6em;
+    font-size: 1.125em;
   }
 }
 
@@ -78,7 +81,7 @@ dl {
 
 /* paragraph indents */
 p {
-  margin: 0 0 1.4em;
+  margin: 0 0 1.15em;
 
   /* sibling indentation*/
   @if $paragraph-indent == true {
@@ -442,7 +445,7 @@ blockquote + .small {
 
 .page__content {
   h2 {
-    font-size: 1.5em;
+    font-size: 1.15em;
     font-weight: 500;
     margin-top: 52px;
     margin-bottom: 18px;
@@ -451,20 +454,20 @@ blockquote + .small {
     padding-bottom: 0;
 
     @include breakpoint(max-width $small) {
-      font-size: 1.35em;
+      font-size: 1.1em;
       margin-top: 48px;
     }
   }
 
   h3 {
-    font-size: 1.25em;
+    font-size: 1.1em;
     font-weight: 500;
     margin-top: 40px;
     margin-bottom: 14px;
     color: var(--heading-color);
 
     @include breakpoint(max-width $small) {
-      font-size: 1.15em;
+      font-size: 1.05em;
     }
   }
 

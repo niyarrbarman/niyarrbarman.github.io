@@ -24,7 +24,7 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 author:
   name: "Niyar R Barman"
   avatar: "files/bio-photo.jpeg"
-  bio: "Language Models, Mechanistic Interpretability and GPU Programming"
+  bio: "Language Models, Compression and Interpretability"
   location: "Toulouse, France"
   employer:
   pubmed:
