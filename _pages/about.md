@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
 # Research Experience
 <span class='anchor' id='-research-experience'></span>
 
-- *Apr 2026 - Sep 2026*, **R&D Intern**, LINAGORA Labs, France
+- *Apr 2026 - Sep 2026*, **R&D Intern**, LINAGORA Labs, France ([Master's internship report]({{ '/files/report_stage_m2_niyar.pdf' | relative_url }}))
 - *May 2024 - Jul 2024, Jan 2025 - Mar 2025*, **Research Intern**, Institut de Recherche en Informatique de Toulouse, France
 - *Jan 2023 - Dec 2024*, **Research Intern**, Artificial Intelligence Institute of University of South Carolina, United States
 
