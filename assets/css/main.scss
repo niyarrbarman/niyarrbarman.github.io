@@ -70,9 +70,13 @@
         border-bottom: none !important;
         transition: color 0.2s ease;
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             color: var(--link-color);
             border-bottom: none !important;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
         }
     }
 }

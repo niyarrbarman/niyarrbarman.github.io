@@ -24,7 +24,7 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 author:
   name: "Niyar R Barman"
   avatar: "files/bio-photo.jpeg"
-  bio: "Language Models, Compression and Interpretability"
+  bio: "Language Models, Reasoning and Post-Training"
   location: "Toulouse, France"
   employer:
   pubmed:

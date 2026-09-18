@@ -19,15 +19,11 @@ redirect_from:
 
 # Bio
 
-I am currently a second-year Master's student (M2) at Université de Toulouse, working as a R&D intern at [LINAGORA Labs](https://labs.linagora.com/) under the supervision of [Dr. Julie Hunter](https://www.juliejhunter.com/).
+I am an incoming CIFRE PhD student in Computer Science at Université de Toulouse, supervised by [Julie Hunter](https://www.juliejhunter.com/), and a full-time Research Engineer at [LINAGORA Labs](https://labs.linagora.com/). My research focuses on improving the reasoning capabilities of language models. More broadly, I am interested in model compression and mechanistic interpretability.
 
-My research interests center on reasoning in language models, mechanistic interpretability, and efficient systems for training and analysis.
+Previously, I worked on math-specialized [Luciole](https://huggingface.co/collections/OpenLLM-France/luciole-llm) models through continued pretraining, structured pruning, and knowledge distillation during my master's internship at LINAGORA Labs. I also pre-trained a 1.3B-parameter Luciole model with [SSA](https://arxiv.org/pdf/2508.14685) on 3T tokens from scratch for an [ANITI](https://aniti.univ-toulouse.fr/fr_fr/) project.
 
-I am currently working on model pruning and distillation techniques to develop a math-specialized model for the [Luciole](https://huggingface.co/collections/OpenLLM-France/luciole-llm) series at LINAGORA Labs. More recently, I pre-trained a 1B Luciole model from scratch on 3T tokens using a custom attention scoring function, [SSA](https://arxiv.org/pdf/2508.14685).
-
-I am open to both research and industry roles starting after October 2026.
-
-You can reach me at: niyar-r.barman[at]utoulouse[.]fr
+You can reach me at: [niyar-r.barman@utoulouse.fr](mailto:niyar-r.barman@utoulouse.fr)
 
 
 # News
